@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--        Google Fonts        -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+    <!--        Fonts Awesome       -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--        Normalize CSS       -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--        Custom CSS          -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Calculos Geometricos</h1>
+            <p>Llena los campos con los datos, nosotros nos encargamos del resto <i class="far fa-laugh-wink"></i></p>
+        </header>
+        <main>
+            <div class="form__container">
+                <form action="#">
+                    <Label for="figuras"> Selecciona tu figura </Label>
+                    <select name="figuras" id="figuras">
+                        <option value=""></option>
+                        <option value="triangulo">Triangulo</option>
+                        <option value="cuadrado">Cuadrado</option>
+                        <option value="circulo">Circulo</option>
+                    </select>
+                    <input type="number" name="ladoCuadrado" id="ladoCuadrado" placeholder="Ingresa el lado">
+                    <input type="number" name="ladoA" id="ladoA" placeholder="Ingresa el lado 1">
+                    <input type="number" name="ladoB" id="ladoB" placeholder="Ingresa el lado 2">
+                    <input type="number" name="ladoC" id="ladoC" placeholder="Ingresa el lado 3">
+                    <input type="number" name="radio" id="radio" placeholder="Ingresa el radio">
+                    <input type="button" class="show form-btn" value="Evaluar" id="evaluar">
+                </form>
+                <div class="respuesta" id="respuesta"></div>
+            </div>
+        </main>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
